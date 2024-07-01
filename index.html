@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Linking Our style.css file -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- Font Style adding from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <title>Heart Disease Risk Prediction</title>
+</head>
+
+<body style="background-color: #000; color: #9d9d9d;">
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">     <!-- Navbar Start -->
+    <div class="container-fluid">
+      <a class="navbar-brand brand-text text-capitalize" href="#">Heart Disease Risk Prediction</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-capitalize" href="#report">Health Check</a>
+          </li>
+
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li> -->
+
+          <li class="nav-item">
+            <a class="nav-link text-capitalize" href="#results">Check Results</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-capitalize" href="#tips">Health & Lifestyle</a>
+          </li>
+
+          <!-- <li class="nav-item">
+            <a class="nav-link text-capitalize" href="contact.html">Contact Us</a>
+          </li> -->
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <!-- Creating Carousel Start -->
+  <section id="home">
+    <header>
+      <div class="row mx-4">
+        <section class="main_heading my-5 pt-5  col-6">
+          <!-- <div class=" text-center">
+          <h1 class="display-4"> About Us </h1>
+          <hr class="w-25 mx-auto" />
+        </div> -->
+
+          <div class="my-5">
+            <!-- <div class="col-lg-6 col-md-6 col-12 col-xxl-6">
+              <figure>
+                <img src="img/a1.jpg" alt="about img" class="img-fluid about_img shadow p-3 mb-5 bg-body rounded" />
+              </figure>
+
+            </div> -->
+
+            <div class="col-lg-8 col-md-8 col-12 col-xxl-8 d-flex justify-content-center align-items-start flex-column">
+              <div class="text-center">
+                <h4 style="color: #d6a504">We're here for your well-being!</h4>
+                  <hr class="w-25 mx-auto" />
+              </div>
+              <p>Your heart is the engine that keeps your body running, and taking care of it is crucial for a long and
+                healthy life. Maintaining a healthy heart prevents cardiovascular diseases like heart attack, stroke,
+                and
+                high blood pressure while boosting energy levels and improving overall well-being. <br /> Investing in
+                heart
+                health not only enhances longevity but also reduces healthcare costs, making preventive measures such as
+                regular exercise, a balanced diet, and stress management essential for a vibrant and fulfilling future.
+              </p>
+
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="right"
+                title="A healthy heart pumps blood more efficiently, providing your body with the oxygen and nutrients it needs to function optimally." ><a class="nav-link text-capitalize text-white" href="#report">Check More</a>
+                </button>
+
+            </div>
+          </div>
+<!-- Heart Animaion -->
+        </section> 
+        <section class="heart-rate-container ms-4 mt-5 pt-5 col-4">
+          <div class="container mt-5 pt-5">
+            <div class="content">
+              <div class="heart-rate">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                  y="0px" width="300px" height="146px" viewBox="0 0 300 146" enable-background="new 0 0 150 73"
+                  xml:space="preserve">
+                  <polyline fill="none" stroke="#009B9E" stroke-width="6" stroke-miterlimit="10"
+                    points="0,90.972 77.028,90.972 89.19,66.648 101.351,90.972 113.514,90.972 125.676,111.244 143.919,18 162.061,146 168.244,90.972 194.593,90.972 206.754,81.676 218.917,90.972 300,90.972" />
+                </svg>
+
+                <div class="fade-in"></div>
+
+                <div class="fade-out"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+  </section>
+
+  <!-- Carousel End -->
+
+
+ 
+  <!-- Our Services Section Start -->
+  <section class="main_heading my-5 pt-5" id="report">
+    <div class="overlay"></div>
+
+    <div class="text-center">
+      <h1 class="display-4">Check Your Heart Health</h1>
+      <hr class="w-25 mx-auto" />
+    </div>
+
+    <div class="container services">
+      <div class="row my-5">
+        <div class="col-md-12 col-12 col-xxl-12 mx-auto">
+          <div class="card mb-3">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="img/s1.jpg" alt="Services" class="img-fluid">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-xxl-12 col-12 col-md-12 mx-auto">
+                        <div class="g-3">
+                          <div class="row g-3 px-3 pt-2">
+                            <div class="col-lg-12">
+                              <form id="form1">
+                                <div class="row g-3">
+                                  <div class="col-sm-4">
+                                    <label class="form-label label">Age</label>
+                                    <select class="form-select" id="age" required="">
+                                      <option value="0" selected="">18-24</option>
+                                      <option value="1">25-29</option>
+                                      <option value="2">30-34</option>
+                                      <option value="3">35-39</option>
+                                      <option value="4">40-44</option>
+                                      <option value="5">45-49</option>
+                                      <option value="6">50-54</option>
+                                      <option value="7">55-59</option>
+                                      <option value="8">60-64</option>
+                                      <option value="9">65-69</option>
+                                      <option value="10">70-74</option>
+                                      <option value="11">75-79</option>
+                                      <option value="12">80 or older</option>
+                                    </select>
+                                    <!-- <input type="text" class="form-control" id="age" placeholder="years" value=""
+                                      required=""> -->
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                    <label class="form-label label">BMI</label>
+                                    <input type="text" class="form-control" id="bmi" placeholder="BMI" value=""
+                                      required="">
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                    <label class="form-label label">Sleep Time</label>
+                                    <input type="text" class="form-control" id="sleep_time" placeholder="(in hrs)"
+                                      value="" required="">
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                    <label class="form-label label">Sex</label>
+                                    <select class="form-select" id="sex" required="">
+                                      <option value="1" selected="">Male</option>
+                                      <option value="0">Female</option>
+                                    </select>
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                    <label class="form-label label">Smoking</label>
+                                    <select class="form-select" id="smoking" required="">
+                                      <option value="0" selected="">No</option>
+                                      <option value="1">Yes</option>
+                                    </select>
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                    <label class="form-label label">Drink Alcohol</label>
+                                    <select class="form-select" id="alcohol" required="">
+                                      <option value="0" selected="">No</option>
+                                      <option value="1">Yes</option>
+                                    </select>
+                                  </div>
+
+                                  <!-- <div class="col-sm-4">
+                                    <label class="form-label label">Asthamatic</label>
+                                    <select class="form-select" id="asthametic" required="">
+                                      <option value="No" selected="">No</option>
+                                      <option value="Yes">Yes</option>
+                                    </select>
+                                  </div> -->
+
+                                  <!-- <div class="col-sm-4">
+                                    <label class="form-label label">Kidney Disease</label>
+                                    <select class="form-select" id="kidney_disease" required="">
+                                      <option value="No" selected="">No</option>
+                                      <option value="Yes">Yes</option>
+                                    </select>
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                    <label class="form-label label">Skin Cancer</label>
+                                    <select class="form-select" id="skin_cancer" required="">
+                                      <option value="No" selected="">No</option>
+                                      <option value="Yes">Yes</option>
+                                    </select>
+                                  </div> -->
+
+                                  <div class="col-sm-4">
+                                    <label class="form-label label">Heart Stroke</label>
+                                    <select class="form-select" id="stroke" required="">
+                                      <option value="0" selected="">No</option>
+                                      <option value="1">Yes</option>
+                                    </select>
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                    <label class="form-label label">Difficulty in Walking</label>
+                                    <select class="form-select" id="diffwalking" required="">
+                                      <option value="0" selected="">No</option>
+                                      <option value="1">Yes</option>
+                                    </select>
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                    <label class="form-label label">Diabetic</label>
+                                    <select class="form-select" id="diabetic" required="">
+                                      <option value="0" selected="">No</option>
+                                      <option value="1">Yes</option>
+                                      <!-- <option value="No, borderline diabetes" selected="">No, borderline diabetes
+                                      </option>
+                                      <option value="Yes, during pregnancy" selected="">Yes, during pregnancy</option> -->
+                                    </select>
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                    <label class="form-label label">Physical Activity</label>
+                                    <select class="form-select" id="physical_activity" required="">
+                                      <option value="0" >No</option>
+                                      <option value="1" selected="">Yes</option>
+                                    </select>
+                                    <!-- <input type="text" class="form-control" id="physical_activity" placeholder="0-30"
+                                      value="" required=""> -->
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                    <label class="form-label label">General Health</label>
+                                    <select class="form-select" id="general_health" required="">
+                                      <option value="2" selected="">Good</option>
+                                      <option value="1">Very Good</option>
+                                      <option value="0">Excellent</option>
+                                      <option value="3">Fair</option>
+                                      <option value="4">Poor</option>
+
+                                    </select>
+                                  </div>
+
+
+                                  <div class="col-sm-4">
+                                    <label class="form-label label">Race</label>
+                                    <select class="form-select" id="race" required="">
+                                      <option value="0" selected="">White</option>
+                                      <option value="3">American Indian or Alaska Native</option>
+                                      <option value="1">Black or African American</option>
+                                      <option value="2">Asian</option>
+                                      <option value="4">Native Hawaiian or Other Pacific Islander</option>
+                                      <option value="5">Multiple/Other</option>
+
+                                    </select>
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                    <label class="form-label label">Physical Health</label>
+                                    <input type="text" class="form-control" id="physical_health" placeholder="0-30"
+                                      value="" required="">
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                    <label class="form-label label">Mental Health</label>
+                                    <input type="text" class="form-control" id="mental_health" placeholder="0-30"
+                                      value="" required="">
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. </p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-12 text-center my-5">
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="right"
+            title="generates your health report" id="predict" disabled>Generate Results</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- Our Service Section End -->
+
+  <section class="main_heading my-5 py-2 offer_style" id="results" style="display: none;"> <!-- Shows result-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xxl-12 col-12 py-5 text-center">
+          <!-- <h4 class="text-white">Based on the information provided, Here's your Result</h4> -->
+          <!-- <h3 class="text-white">70%</h3> -->
+          <h4 class="text-white" id="prediction"></h4>
+          <!-- <button type="button" class="btn btn-outline-light" data-bs-toggle="tooltip" data-bs-placement="right"
+              title="to visit Profile"> Click Here</button> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section Starts-->
+  <section class="main_heading my-5  pt-5" id="tips"><!-- Gallery Section Start-->
+    <div class="text-center">
+      <h1 class="display-4"> Health & Lifestyle </h1>
+      <hr class="w-25 mx-auto">
+    </div>
+
+    <div class="container">
+      <div class="row gy-2 my-5 ">
+        <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+          <figure class="">
+            <img src="img/g11.avif" alt="Gallery" class="img-fluid shadow p-3 mb-5 bg-body rounded">
+          </figure>
+
+        </div>
+
+        <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+          <figure class="">
+            <img src="img/g2.jpg" alt="Gallery" class="img-fluid shadow p-3 mb-5 bg-body rounded">
+          </figure>
+
+        </div>
+
+        <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+          <figure class="">
+            <img src="img/g17.avif" alt="Gallery" class="img-fluid shadow p-3 mb-5 bg-body rounded">
+          </figure>
+
+        </div>
+
+        <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+          <figure class="">
+            <img src="img/g18.avif" alt="Gallery" class="img-fluid shadow p-3 mb-5 bg-body rounded">
+          </figure>
+
+        </div>
+
+        <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+          <figure class="">
+            <img src="img/g12.avif" alt="Gallery" class="img-fluid shadow p-3 mb-5 bg-body rounded">
+          </figure>
+
+        </div>
+
+        <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+          <figure class="">
+            <img src="img/g14.avif" alt="Gallery" class="img-fluid shadow p-3 mb-5 bg-body rounded">
+          </figure>
+
+        </div>
+
+        <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+          <figure class="">
+            <img src="img/g7.jpg" alt="Gallery" class="img-fluid shadow p-3 mb-5 bg-body rounded">
+          </figure>
+
+        </div>
+
+        <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+          <figure class="">
+            <img src="img/g16.avif" alt="Gallery" class="img-fluid shadow p-3 mb-5 bg-body rounded">
+          </figure>
+
+        </div>
+
+        <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+          <figure class="">
+            <img src="img/g15.avif" alt="Gallery" class="img-fluid shadow p-3 mb-5 bg-body rounded">
+          </figure>
+
+        </div>
+
+      </div>
+    </div>
+
+
+  </section>
+  <!-- Gallery Section End -->
+
+  <!-- Check out More Section Start -->
+  <!-- Check out More Section End -->
+
+  <!-- Contack Us Section Start -->
+  <!-- <section class="main_heading my-5">
+    <div class="text-center">
+      <h1 class="display-4"> Contact Us</h1>
+      <hr class="w-25 mx-auto" />
+    </div>
+
+  </section> -->
+  <!-- Contack Us Section End -->
+
+  <!-- Footer Started -->
+  <footer class="bg-secondary text-center text-white">
+    <p>Copyright &copy; 2024</p>
+  </footer>
+  <!-- Footer End -->
+
+  <!-- Separate Popper and Bootstrap JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+    crossorigin="anonymous"></script>
+
+  <!-- Enable tooltip everywhere -->
+  <script type="text/javascript">
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.getElementById('form1');
+      const submitBtn = document.getElementById('predict');
+
+      // Function to check if the form is valid and enable/disable the button accordingly
+      const checkValidity = () => {
+        if (form.checkValidity()) {
+          submitBtn.removeAttribute('disabled');
+        } else {
+          submitBtn.setAttribute('disabled', 'disabled');
+        }
+      };
+
+      // Add event listeners to form inputs
+      form.querySelectorAll('input').forEach(input => {
+        input.addEventListener('input', checkValidity);
+      });
+    });
+    var button = document.getElementById("predict");
+
+    // // Add an event listener to the button
+    button.addEventListener("click", function () {
+      predict();
+    });
+
+    function predict() {
+      const inputData = prepareInputData()
+
+      fetch('http://127.0.0.1:5000/predict', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(inputData)
+      })
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById('results').style.display = 'block';
+          const resultSection = document.getElementById('results');
+        if (parseInt(data.prediction) === 0) {
+            resultSection.style.backgroundColor = '#348228'; // Change to green for low risk
+        } else {
+            resultSection.style.backgroundColor = '#ffcc00'; // Change to red for high risk
+        }
+          document.getElementById('prediction').innerText = parseInt(data.prediction) === 0 ? "Congratulations! Based on the provided information, you have a low risk of heart disease. Keep up the healthy habits!" : "Caution! Based on the provided information, you have a higher risk of heart disease. It's important to consult a healthcare professional for further evaluation and guidance.";
+          // Scroll to the result section
+          scrollToResultSection();
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    }
+    function prepareInputData() {
+      var form = document.getElementById("form1");
+
+      var age = form.elements["age"].value;
+      var bmi = form.elements["bmi"].value;
+      var sleep_time = form.elements["sleep_time"].value;
+      var sex = form.elements["sex"].value;
+      var smoking = form.elements["smoking"].value;
+      var alcohol = form.elements["alcohol"].value;
+      // var asthametic = form.elements["asthametic"].value;
+      // var kidney_disease = form.elements["kidney_disease"].value;
+      // var skin_cancer = form.elements["skin_cancer"].value;
+      var stroke = form.elements["stroke"].value;
+      var diffwalking = form.elements["diffwalking"].value;
+      var diabetic = form.elements["diabetic"].value;
+      var physical_activity = form.elements["physical_activity"].value;
+      var general_health = form.elements["general_health"].value;
+      var race = form.elements["race"].value;
+      var physical_health = form.elements["physical_health"].value;
+      var mental_health = form.elements["mental_health"].value;
+
+      const payload = {
+        BMI: parseFloat(bmi),
+        Smoking: parseInt(smoking),
+        AlcoholDrinking: parseInt(alcohol),
+        Stroke: parseInt(stroke),
+        PhysicalHealth: parseInt(physical_health),
+        MentalHealth: parseInt(mental_health),
+        DiffWalking: parseInt(diffwalking),
+        Sex: parseInt(sex),
+        AgeCategory: parseInt(age),
+        Race: parseInt(race),
+        Diabetic: parseInt(diabetic),
+        PhysicalActivity: parseInt(physical_activity),
+        GenHealth: parseInt(general_health),
+        SleepTime: parseInt(sleep_time)
+      }
+
+      console.log(payload);
+      return payload;
+    }
+    function scrollToResultSection() {
+      const resultSection = document.getElementById('results');
+      resultSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+
+</html>
