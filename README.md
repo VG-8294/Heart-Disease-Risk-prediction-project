@@ -1,7 +1,7 @@
 
-![alt text](<Screenshot 2024-07-01 123926.png>)
 ![alt text](<Screenshot 2024-07-01 123842.png>)
 ![alt text](<Screenshot 2024-07-01 123901.png>)
+![alt text](<Screenshot 2024-07-01 123926.png>)
 
 # Website_Template
 This Website Template is created by using Bootstrap 5
